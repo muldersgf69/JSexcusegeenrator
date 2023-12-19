@@ -1,20 +1,19 @@
-window.onload = () => {
-    document.querySelector('#button').addEventListener("onclick", () => {
-        document.querySelector('#excuse').innerHTML = generateExcuse('#excuse'); 
-    console.log(generateExcuse);
-    });
-};
-function generateExcuse() => {
-    let pronoun = ['A', 'The'];
-    let subject = ['jogger', 'raccoon', 'dog', 'driver', 'comedian', 'pincone'];
-    let action = ['took my', 'threw my', 'yelled at my', 'stole my', 'bit my'];
-    let thing = ['homework', 'toe', 'car', 'shoe'];
-    let where = ['on the street', 'in my house', 'in my driveway'];
-
-    let proIndx = Math.floor(Math.random() * pronoun.length);
-    let subjIndx = Math.floor(Math.random() * subject.length);
-    let actionIndx = Math.floor(Math.random() * action.length);
-    let thingIndx = Math.floor(Math.random() * thing.length);
-    let whereIndx = Math.floor(Math.random() * where.length);
-    return pronoun[proIndx] + '' + subject[subjIndx] + '' + action[actionIndx] + '' + thing[thingIndx] + '' + where[whereIndx];
-}
+function generateExcuse() {
+    var whoList = ['The dog', 'My grandma', 'His turtle', 'My bird'];
+    var actionList = ['ate', 'peed', 'crushed', 'broke'];
+    var whatList = ['my homework', 'the keys', 'the car'];
+    var whenList = ['before the class', 'right on time', 'when I finished', 'during my lunch', 'while I was praying'];
+  
+    function getRandomElement(array) {
+      return array[Math.floor(Math.random() * array.length)];
+    }
+  
+    var excuse = getRandomElement(whoList) + ' ' + getRandomElement(actionList) + ' ' + getRandomElement(whatList) + ' ' + getRandomElement(whenList) + '.';
+  
+    return excuse;
+  }
+  function updateExcuse() {
+    var excuseElement = document.getElementById('excuse');
+    excuseElement.textContent = generateExcuse();
+  }
+  document.getElementById('button').addEventListener('click', updateExcuse);
