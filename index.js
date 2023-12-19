@@ -1,10 +1,10 @@
 window.onload = () => {
-    document.querySelector('#button').addEventListener("click", () => {
-        document.querySelector('#excuse').innerHTML = generateExcuse(); 
+    document.querySelector('#button').addEventListener("onclick", () => {
+        document.querySelector('#excuse').innerHTML = generateExcuse(#excuse); 
     console.log(generateExcuse);
     });
 };
-function generateExcuse() {
+function generateExcuse() => {
     let pronoun = ['A', 'The'];
     let subject = ['jogger', 'raccoon', 'dog', 'driver', 'comedian', 'pincone'];
     let action = ['took my', 'threw my', 'yelled at my', 'stole my', 'bit my'];
