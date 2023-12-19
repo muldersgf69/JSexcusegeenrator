@@ -1,7 +1,8 @@
 window.onload = () => {
-    document.querySelector('#button').addEventListener("onclick", () => {
+    document.querySelector('#button').addEventListener("click", () => {
         document.querySelector('#excuse').innerHTML = generateExcuse(); 
-    });console.log(generateExcuse)
+    console.log(generateExcuse)
+    })
 };
 function generateExcuse() {
     let pronoun = ['A', 'The'];
