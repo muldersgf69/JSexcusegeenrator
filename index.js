@@ -1,8 +1,8 @@
 window.onload = () => {
     document.querySelector('#button').addEventListener("click", () => {
         document.querySelector('#excuse').innerHTML = generateExcuse(); 
-    console.log(generateExcuse)
-    })
+    console.log(generateExcuse);
+    });
 };
 function generateExcuse() {
     let pronoun = ['A', 'The'];
@@ -17,8 +17,4 @@ function generateExcuse() {
     let thingIndx = Math.floor(Math.random() * thing.length);
     let whereIndx = Math.floor(Math.random() * where.length);
     return pronoun[proIndx] + '' + subject[subjIndx] + '' + action[actionIndx] + '' + thing[thingIndx] + '' + where[whereIndx];
-
-
-
-
 }
