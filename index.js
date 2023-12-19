@@ -1,5 +1,5 @@
 window.onload = () => {
-    document.querySelector('#button').addEventListener("click", () => {
+    document.querySelector('#button').addEventListener("onclick", () => {
         document.querySelector('#excuse').innerHTML = generateExcuse(); 
     });console.log(generateExcuse)
 };
