@@ -17,3 +17,5 @@ function generateExcuse() {
     excuseElement.textContent = generateExcuse();
   }
   document.getElementById('button').addEventListener('click', updateExcuse);
+  window.onload = function () {
+    updateExcuse();}
