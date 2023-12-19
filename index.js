@@ -15,7 +15,7 @@ let generateExcuse = () => {
     let actionIndx = Math.floor(Math.random() * action.length);
     let thingIndx = Math.floor(Math.random() * thing.length);
     let whereIndx = Math.floor(Math.random() * where.length);
-    return pronoun[proIndx]+''+subject[subjIndx]+''+action[actionIndx]+''+thing[thingIndx]+''+where[whereIndx]
+    return pronoun[proIndx]+''+subject[subjIndx]+''+action[actionIndx]+''+thing[thingIndx]+''+where[whereIndx];
 
 
 
