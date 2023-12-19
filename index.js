@@ -1,6 +1,6 @@
 window.onload = () => {
     document.querySelector('#button').addEventListener("onclick", () => {
-        document.querySelector('#excuse').innerHTML = generateExcuse(#excuse); 
+        document.querySelector('#excuse').innerHTML = generateExcuse('#excuse'); 
     console.log(generateExcuse);
     });
 };
